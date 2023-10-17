@@ -1,4 +1,6 @@
-def mysum(x,y):
+import typer
+def mysum(x:int,y:int):
     print(x+y)
     
-mysum(4,5)
+if __name__ == "__main__":
+    typer.run(mysum)
