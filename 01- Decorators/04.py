@@ -5,7 +5,7 @@ def calculate_execution_time(func):
         func() 
         end_time = time.time()
         
-        print(f'execution time = { end_time - start_time }')
+        print(f'execution time for {func.__name__} = { end_time - start_time }')
     return wrapper
 
 @calculate_execution_time
